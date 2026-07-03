@@ -1,0 +1,18 @@
+# Python 缓存
+__pycache__/
+*.pyc
+
+# 打包相关
+build/
+dist/
+*.spec
+
+# IDE 配置
+.idea/
+
+# 本地数据（包含你的个人题库，绝对不要上传）
+bagu_db.json
+config.json
+
+# 可选：如果你不确定 ui.css 是否必要，先排除
+ui.css
