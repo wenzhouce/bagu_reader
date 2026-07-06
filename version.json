@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
-  "download_url": "https://github.com/wenzhouce/bagu_reader/releases/download/v1.0.0/bagu_reader.exe",
-  "release_notes": "项目首次发布"
+  "version": "1.0.1",
+  "download_url": "https://github.com/wenzhouce/bagu_reader/releases/download/v1.0.1/bagu_reader.exe",
+  "release_notes": "【功能优化&bug修复】\n1. 修复切换题库左侧树形不刷新、需重启软件的核心问题；\n2. 新增手动刷新题库按钮，外部修改json文件可一键重载；\n3. 优化存储目录选择弹窗，默认定位当前正在使用的数据目录，不用手动查找原文件夹；\n4. 优化题库下拉框样式，移除常驻灰色选中高亮，界面视觉更干净；\n5. 兼容旧版config.json配置文件，自动补全缺失的库路径、自定义目录字段；\n6. 切换题库时自动清空预览面板、重置选中状态，避免旧内容残留；\n7. 修复全局变量跨模块同步失效问题，多库切换逻辑完全稳定；\n8. 完善目录迁移逻辑，复制资源文件时兼容图片、配置、多题库json文件。"
 }

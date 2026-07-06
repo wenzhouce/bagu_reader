@@ -24,8 +24,9 @@ def render_md_to_html(md_text, font_cfg, dark_mode=False):
         raw_html,
         flags=re.S
     )
-    # 调试：打印 raw_html 查看是否有高亮 class
-    asset_uri = Path(ASSET_DIR).as_uri() + "/"
+    # ========== 修复点：加括号调用ASSET_DIR() ==========
+    asset_path = ASSET_DIR()
+    asset_uri = asset_path.as_uri() + "/"
     raw_html = raw_html.replace('src="./assets/', f'src="{asset_uri}')
 
     # 专为 tkinterweb 优化的语法高亮 CSS（模拟 VSCode 浅色主题）
